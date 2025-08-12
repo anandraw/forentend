@@ -277,7 +277,6 @@ aside {
   flex: 1;
 }
 
-/* ===== Tablet and Smaller (≤1024px) ===== */
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column;
@@ -298,7 +297,6 @@ aside {
 
 /* ===== Mobile View (≤768px) ===== */
 @media (max-width: 768px) {
-  /* Stack everything vertically */
   .hero {
     gap: 15px;
   }
@@ -320,13 +318,11 @@ aside {
     margin: 0 6px;
   }
 
-  /* Adjust cards */
   aside .card {
     text-align: left;
     width: 100%;
   }
 
-  /* Heading size smaller for mobile */
   .hero-card h1 {
     font-size: 1.6rem;
   }
@@ -335,7 +331,6 @@ aside {
   }
 }
 
-/* ===== Extra Small Devices (≤480px) ===== */
 @media (max-width: 480px) {
   .hero-card h1 {
     font-size: 1.4rem;

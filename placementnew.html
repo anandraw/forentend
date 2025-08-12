@@ -247,18 +247,27 @@
     // Handle form submission: send to backend to save in Excel
     document.getElementById('contactForm').onsubmit = async function (e) {
       e.preventDefault();
+
       const form = e.target;
-      const data = new FormData(form);
-      const res = await fetch('https://myapp-backend-l2fx.onrender.com/save-contact', {
+      const data = {
+        name: form.name.value,
+        email: form.email.value,
+        contact: form.contact.value
+      };
+
+      const res = await fetch('http://localhost:3000/api/contact', {
         method: 'POST',
-        body: data
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
       });
+
       if (res.ok) {
         document.getElementById('formMsg').style.display = 'block';
         form.reset();
         setTimeout(closeContactModal, 1800);
       }
     };
+
 
     // animate counters
     document.querySelectorAll('.num').forEach(el => {
