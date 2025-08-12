@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aptitude Test Information</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: sticky;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      animation: fadeInDown 1s ease;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.3rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section {
+      margin: 60px 0;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #2575fc;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .about img {
+      max-width: 30%;
+      border-radius: 15px;
+      flex: 1 1 350px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .about div {
+      flex: 1 1 350px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+</header>
+  <!-- ...existing code... -->
+<header class="header-area header-sticky" style="background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:10px 0;">
+  <div class="container">
+    <nav style="display:flex;align-items:center;justify-content:space-between;">
+      <!-- Simple Logo -->
+      <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+        <img src="assets/images/logo.jpeg" alt="logo" style="height:40px;width:40px;border-radius:8px;">
+        <span style="font-weight:700; color: #0d6efd;">Catalyst Careers</span>
+      </a>
+      <!-- Simple Nav Menu -->
+      <ul style="display:flex;gap:24px;list-style:none;margin:0;padding:0;align-items:center;">
+        <li><a href="index.html" style="text-decoration:none;color:#222;font-weight:500;">Home</a></li>
+        <li><a href="#services" style="text-decoration:none;color:#222;font-weight:500;">About Us</a></li>
+        <li><a href="#recruiters" style="text-decoration:none;color:#222;font-weight:500;">Recruiters</a></li>
+        <li><a href="placement.html" style="text-decoration:none;color:#222;font-weight:500;">Placement</a></li>
+        <li><a href="#contact-section" style="text-decoration:none;color:#222;font-weight:500;">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- ...existing code... -->
+  <div class="container">
+    <section class="section about">
+      <img src="assets/images/Professional-removebg-preview.png" alt="Aptitude Illustration">
+      <div>
+        <h2>What is an Aptitude Test?</h2>
+        <p>Aptitude tests are designed to measure a person's potential in various skills such as problem-solving,
+          logical reasoning, and data interpretation. They are widely used in job assessments, competitive exams, and
+          academic evaluations to identify strengths and areas of improvement.</p>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Types of Aptitude Tests</h2>
+      <div class="cards">
+        <div class="card"><img src="assets/images/numeric.jpg" alt="Numerical">
+          <h3>Numerical</h3>
+          <p>Assesses mathematical ability, data interpretation, and number series.</p>
+        </div>
+        <div class="card"><img src="assets/images/logical-removebg-preview.png" alt="Logical">
+          <h3>Logical</h3>
+          <p>Evaluates reasoning patterns, sequence solving, and logic puzzles.</p>
+        </div>
+        <div class="card"><img src="assets/images/verbal-removebg-preview.png" alt="Verbal">
+          <h3>Verbal</h3>
+          <p>Measures comprehension, vocabulary, and grammar proficiency.</p>
+        </div>
+        <div class="card"><img src="assets/images/spatial.png" alt="Spatial">
+          <h3>Spatial</h3>
+          <p>Tests visualization and manipulation of 2D and 3D objects.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Preparation Tips</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Practice Daily</h3>
+          <p>Build consistency to improve accuracy and speed.</p>
+        </div>
+        <div class="card">
+          <h3>Focus on Fundamentals</h3>
+          <p>Solid understanding of basics in maths and logic is essential.</p>
+        </div>
+        <div class="card">
+          <h3>Time Management</h3>
+          <p>Allocate time wisely to avoid getting stuck on a single question.</p>
+        </div>
+        <div class="card">
+          <h3>Attempt Mock Tests</h3>
+          <p>Boost confidence by simulating real exam conditions.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>Copyright @Kavya Infoweb. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
