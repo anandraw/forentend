@@ -16,7 +16,7 @@ document.getElementById('contactForm').onsubmit = async function (e) {
         contact: form.contact.value
     };
 
-    const res = await fetch('http://localhost:3000/api/contact', {
+    const res = await fetch('https://myapp-backend-l2fx.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
