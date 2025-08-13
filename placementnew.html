@@ -15,26 +15,46 @@
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
 
 </head>
-<header class="header-area header-sticky" style="background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:10px 0;">
-  <div class="container">
-    <nav style="display:flex;align-items:center;justify-content:space-between;">
-      <!-- Simple Logo -->
-      <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-        <img src="assets/images/logo.jpeg" alt="logo" style="height:40px;width:40px;border-radius:8px;"><span
-          style="font-weight:700">Catalyst Careers</span>
-
-        <!-- Simple Nav Menu -->
-        <ul style="display:flex;gap:24px;list-style:none;margin:0;padding:0;align-items:center;">
-          <li><a href="index.html" style="text-decoration:none;color:#222;font-weight:500;">Home</a></li>
-          <li><a href="#" style="text-decoration:none;color:#222;font-weight:500;">About Us</a></li>
-        </ul>
-    </nav>
-  </div>
-</header>
 
 <body>
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav mt-3">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img class="logo" src="assets/images/logo.jpeg" alt="logo">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">About Us</a></li>
+
+              <li class="has-sub">
+                <a href="javascript:void(0)">Services</a>
+                <ul class="sub-menu">
+                  <li><a href="training.html">Training</a></li>
+                  <li><a href="Aptitude.html">Aptitude</a></li>
+                  <li><a href="placementnew.html">Placement</a></li>
+                </ul>
+              </li>
+
+              <li class="scroll-to-section"><a href="#contact-section">Contact Us</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
   <div class="container">
     <header>
       <div class="logo">
@@ -83,6 +103,7 @@
             <img src="assets/images/accenture.png" alt="Accenture">
             <img src="assets/images/infosys.png" alt="Infosys">
             <img src="assets/images/tcs.png" alt="TCS">
+
             <!-- repeat for smooth marquee -->
             <img src="assets/images/persistent.png" alt="Persistent">
             <img src="assets/images/accenture.png" alt="Accenture">
@@ -210,87 +231,62 @@
         </div>
       </aside>
     </main>
-
-    <footer>
-      <p>Copyright @Kavya Infoweb. All Rights Reserved.</p>
-    </footer>
   </div>
+  <footer>
+        <div class="container" style="max-width: 1100px; margin: 36px auto; padding: 24px;">
+            <ul class="social-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:catalystcareer20@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/careercatalyst01?igsh=MXc4OGZ2bHhrMnVzdQ=="><i
+                            class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+            <p>Copyright @Kavya Infoweb. All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
 
   <!-- Contact Form Modal -->
   <div id="contactModal"
     style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:999;align-items:center;justify-content:center;">
+
     <form id="contactForm" action="/save-contact" method="POST"
       style="background:#fff;padding:24px 28px;border-radius:12px;max-width:350px;width:90%;box-shadow:0 4px 24px rgba(0,0,0,0.12);display:flex;flex-direction:column;gap:14px;position:relative;">
+
       <button type="button" onclick="closeContactModal()"
         style="position:absolute;top:8px;right:12px;background:none;border:none;font-size:20px;cursor:pointer;">×</button>
+
       <h4 style="margin:0 0 10px">Contact Placement Cell</h4>
+
       <input name="name" type="text" placeholder="Your Name" required
         style="padding:8px;border-radius:6px;border:1px solid #ccc;">
+
       <input name="email" type="email" placeholder="Your Email" required
         style="padding:8px;border-radius:6px;border:1px solid #ccc;">
+
       <input name="contact" type="tel" placeholder="Contact Number" required
         style="padding:8px;border-radius:6px;border:1px solid #ccc;">
+
       <button type="submit" class="btn" style="margin-top:8px;">Submit</button>
+
       <div id="formMsg" style="font-size:13px;color:green;display:none;margin-top:6px;">Thank you! We received your
         details.</div>
     </form>
   </div>
+  <script src="assets/js/placement.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <script>
-    function openContactModal() {
-      document.getElementById('contactModal').style.display = 'flex';
-    }
-    function closeContactModal() {
-      document.getElementById('contactModal').style.display = 'none';
-    }
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
 
-    // Handle form submission: send to backend to save in Excel
-    document.getElementById('contactForm').onsubmit = async function (e) {
-      e.preventDefault();
-
-      const form = e.target;
-      const data = {
-        name: form.name.value,
-        email: form.email.value,
-        contact: form.contact.value
-      };
-
-      const res = await fetch('http://localhost:3000/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-
-      if (res.ok) {
-        document.getElementById('formMsg').style.display = 'block';
-        form.reset();
-        setTimeout(closeContactModal, 1800);
-      }
-    };
-
-
-    // animate counters
-    document.querySelectorAll('.num').forEach(el => {
-      const target = parseFloat(el.getAttribute('data-target')) || 0;
-      let cur = 0;
-      const isFloat = (String(target).indexOf('.') > -1);
-      const duration = 1400;
-      const steps = Math.max(20, Math.round(duration / 16));
-      const inc = target / steps;
-      const fmt = v => isFloat ? Number(v).toFixed(1) : Math.round(v);
-      const iv = setInterval(() => {
-        cur += inc;
-        if (cur >= target) { el.textContent = fmt(target); clearInterval(iv); }
-        else el.textContent = fmt(cur);
-      }, duration / steps);
-    });
-
-    // simple accessibility: pause marquee on hover
-    document.querySelectorAll('.marquee').forEach(m => {
-      m.addEventListener('mouseenter', () => { m.querySelector('.track').style.animationPlayState = 'paused' })
-      m.addEventListener('mouseleave', () => { m.querySelector('.track').style.animationPlayState = 'running' })
-    });
-  </script>
 </body>
-
 </html>

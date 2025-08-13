@@ -14,25 +14,6 @@
       line-height: 1.6;
     }
 
-    header {
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-      position: sticky;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      animation: fadeInDown 1s ease;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 1.3rem;
-      opacity: 0.9;
-    }
 
     .container {
       max-width: 1200px;
@@ -114,28 +95,57 @@
       }
     }
   </style>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
-</header>
   <!-- ...existing code... -->
-<header class="header-area header-sticky" style="background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:10px 0;">
-  <div class="container">
-    <nav style="display:flex;align-items:center;justify-content:space-between;">
-      <!-- Simple Logo -->
-      <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-        <img src="assets/images/logo.jpeg" alt="logo" style="height:40px;width:40px;border-radius:8px;">
-        <span style="font-weight:700; color: #0d6efd;">Catalyst Careers</span>
-      </a>
-      <!-- Simple Nav Menu -->
-      <ul style="display:flex;gap:24px;list-style:none;margin:0;padding:0;align-items:center;">
-        <li><a href="index.html" style="text-decoration:none;color:#222;font-weight:500;">Home</a></li>
-        <li><a href="#" style="text-decoration:none;color:#222;font-weight:500;">About Us</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<!-- ...existing code... -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav mt-3">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img class="logo" src="assets/images/logo.jpeg" alt="logo">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">About Us</a></li>
+
+              <li class="has-sub">
+                <a href="javascript:void(0)">Services</a>
+                <ul class="sub-menu">
+                  <li><a href="training.html">Training</a></li>
+                  <li><a href="Aptitude.html">Aptitude</a></li>
+                  <li><a href="placementnew.html">Placement</a></li>
+                </ul>
+              </li>
+
+              <li class="scroll-to-section"><a href="#contact-section">Contact Us</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ...existing code... -->
   <div class="container">
     <section class="section about">
       <img src="assets/images/Professional-removebg-preview.png" alt="Aptitude Illustration">
@@ -161,10 +171,6 @@
           <h3>Verbal</h3>
           <p>Measures comprehension, vocabulary, and grammar proficiency.</p>
         </div>
-        <div class="card"><img src="assets/images/spatial.png" alt="Spatial">
-          <h3>Spatial</h3>
-          <p>Tests visualization and manipulation of 2D and 3D objects.</p>
-        </div>
       </div>
     </section>
     <section class="section">
@@ -182,16 +188,38 @@
           <h3>Time Management</h3>
           <p>Allocate time wisely to avoid getting stuck on a single question.</p>
         </div>
-        <div class="card">
-          <h3>Attempt Mock Tests</h3>
-          <p>Boost confidence by simulating real exam conditions.</p>
-        </div>
       </div>
     </section>
   </div>
   <footer>
-    <p>Copyright @Kavya Infoweb. All Rights Reserved.</p>
+    <div class="footer-container" style="max-width: 1100px;
+    margin: 130px auto;
+    padding: 30px;">
+      <ul class="social-icons">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="mailto:catalystcareer20@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://www.instagram.com/careercatalyst01?igsh=MXc4OGZ2bHhrMnVzdQ=="><i
+              class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+      </ul>
+      <p>Copyright @Kavya Infoweb. All Rights Reserved.</p>
+    </div>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+
 </body>
 
 </html>
